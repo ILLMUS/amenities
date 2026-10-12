@@ -1,7 +1,7 @@
 create table public.testimonials (
   id uuid default gen_random_uuid() primary key,
   name text not null,
-  role text default 'Guest',
+  role text default 'Guest', 
   property text default 'Bespoke Client',
   category text check (category in ('hotel', 'lodge', 'airbnb')) default 'hotel',
   location text default 'Eswatini',
